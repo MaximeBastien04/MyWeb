@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Maxime Bastien">
+    <meta name="description" content="Hi! I'm Maxime Bastien. Welcome to my website! 
+    on here, you will be able to find more information about what i do and who i am.">
+    <meta name="keywords" content="Maxime, Bastien, Maxime Bastien, Multimedia, 3D">
+    <title>Contact | Maxime Bastien</title>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="../js/index.js" type="module"></script>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/master.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/media.css">
+</head>
+
+<body>
+    <div class="intro greenIntro"></div>
+    <div class="introOverlay"></div>
+    <nav>
+        <h2>LOGO</h2>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../pages/works.html">Works</a></li>
+            <li><a href="../pages/about.html">About me</a></li>
+            <li><a href="#" class="active">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="contact-container">
+            <div>
+                <h1>Got a question?</h1>
+                <h1>Ask me!</h1>
+            </div>
+            <form>
+                <label for="name">Name*</label>
+                <label for="lastName">Last name*</label>
+                <input type="text" id="name" placeholder="Name" required>
+                <input type="text" id="lastName" placeholder="Last name" required>
+                <label for="email">Email*</label>
+                <input type="email" id="email" placeholder="Email" required>
+                <label for="message">Message*</label>
+                <input type="text" name="message" id="message" placeholder="Message" required></textarea>
+                <button id="send">Send</button>
+            </form>
+        </section>
+        <div class="popup" id="popup">
+            <div class="overlay"></div>
+            <div class="popup-content">
+                <h2>Message send successfully</h2>
+                <h1>Thanks for your message!</h1>
+                <button id="close-popup">OK</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <section class="footer-content">
+            <div class="socials">
+                <h3>socials</h3>
+                <p><a href="https://www.linkedin.com/in/maxime-bastien-729298236/" target="_blank">LinkedIn</a></p>
+                <p><a href="https://www.instagram.com/maxime_.b/?hl=en" target="_blank">Instagram</a></p>
+                <p><a href="https://twitter.com/Frozytime" target="_blank">Twitter</a></p>
+            </div>
+            <div class="question">
+                <h3>Got question?</h3>
+                <a href="contact.html"><button>Ask!</button></a>
+            </div>
+        </section>
+        <aside class="copyright">
+            <h4>© Made by Maxime Bastien</h4>
+        </aside>
+    </footer>
+
+</html>
