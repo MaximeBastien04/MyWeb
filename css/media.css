@@ -1,0 +1,12 @@
+@media only screen and (max-width: 1780px) {
+    #contact-container div h1, 
+    #about-container section h1{
+        text-transform: uppercase;
+        font-size: 90px;
+    }
+    
+    #about-container aside {
+        width: 100%;
+        margin-left: auto;
+    }
+}
