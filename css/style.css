@@ -31,6 +31,7 @@ nav ul {
     grid-gap: 80px;
     justify-self: right;
     margin-right: 20px;
+    grid-column: 2/3;
 }
 
 nav ul li a {
@@ -452,6 +453,7 @@ form textarea {
 
 #works-container div h2:hover{
     font-weight: bolder;
+    transition: 0.2s;
 }
 
 .works-category{
@@ -476,10 +478,12 @@ form textarea {
 .works-category article p{
     color: white;
     margin: 5px 10px;
+    transition: 0.2s;
 }
 
 .works-category article:hover p{
     font-weight: bolder;
+    transition: 0.2s;
 }
 
 #works-models-container{
