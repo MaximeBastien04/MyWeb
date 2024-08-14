@@ -32,10 +32,6 @@ function togglePopup(e) {
     }
 }
 
-// e911a346-47c1-4268-8aec-bc003a6faf78
-
 function closePopup(){
     document.getElementById('popup').classList.toggle('active');
 }
-
-// https://smtpjs.com/
