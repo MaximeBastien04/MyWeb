@@ -263,7 +263,7 @@ article h2 {
 #about-container {
     width: 90%;
     margin: auto;
-    margin-top: 150px;
+    margin-top: 100px;
     margin-bottom: 150px;
 }
 
@@ -286,7 +286,6 @@ h1 {
 }
 
 #contact-container form label {
-    margin-top: 30px;
     margin-bottom: 10px;
 }
 
@@ -295,6 +294,7 @@ form textarea {
     padding: 10px 5px 10px 5px;
     font-family: Avenir;
     font-size: 16px;
+    margin-bottom: 30px;
 }
 
 #contact-container form label:nth-child(5) {
