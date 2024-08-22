@@ -433,7 +433,7 @@ form textarea {
 
 #works-container #work-categories{
     display: grid;
-    grid-template-columns: auto auto 1fr;
+    grid-template-columns: auto auto auto 1fr;
     grid-gap: 50px;
     margin-top: 50px;
     margin-bottom: 30px;
@@ -486,7 +486,7 @@ form textarea {
     transition: 0.2s;
 }
 
-#works-models-container{
+#works-models-container, #works-games-container{
     display: none;
 }
 
@@ -518,6 +518,34 @@ form textarea {
 
 .work-popup .popup-content div p{
     cursor: pointer;
+}
+
+.work-popup .popup-content a{
+    grid-row: 2/3;
+    grid-column: 2/3;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+.work-popup .popup-content a img:nth-child(1){
+    grid-column: 1/2;
+    grid-area: 1/2;
+    margin-top: 50px;
+}
+
+.work-popup .popup-content a img:nth-child(2){
+    grid-column: 1/2;
+    grid-area: 1/2;
+    justify-self: center;
+    align-self: center;
+    width: 25%;
+    transition: 0.4s;
+}
+
+.work-popup .popup-content a img:nth-child(2):hover{
+    transform: scale(1.05);
+    transition: 0.4s;
 }
 
 .work-popup .popup-content .work-content-info{

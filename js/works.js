@@ -6,22 +6,39 @@ videosBtn.addEventListener('click', showVideos);
 const modelsBtn = document.getElementById('3dModels');
 modelsBtn.addEventListener('click', showModels);
 
+const gamesBtn = document.getElementById('games');
+gamesBtn.addEventListener('click', showGames);
+
 
 const videoContainer = document.getElementById('works-video-container');
 const modelsContainer = document.getElementById('works-models-container');
+const gamesContainer = document.getElementById('works-games-container');
 
 function showVideos() {
     modelsContainer.style.display = 'none';
     videoContainer.style.display = 'grid';
+    gamesContainer.style.display = 'none';
     modelsBtn.style.textDecoration = 'none';
     videosBtn.style.textDecoration = '#ffffff underline 2px';
+    gamesBtn.style.textDecoration = 'none';
 }
 
 function showModels() {
     videoContainer.style.display = 'none';
     modelsContainer.style.display = 'grid';
-    videosBtn.style.textDecoration = 'none';
+    gamesContainer.style.display = 'none';
     modelsBtn.style.textDecoration = '#ffffff underline 2px';
+    videosBtn.style.textDecoration = 'none';
+    gamesBtn.style.textDecoration = 'none';
+}
+
+function showGames() {
+    videoContainer.style.display = 'none';
+    modelsContainer.style.display = 'none';
+    gamesContainer.style.display = 'grid';
+    modelsBtn.style.textDecoration = 'none';
+    videosBtn.style.textDecoration = 'none';
+    gamesBtn.style.textDecoration = '#ffffff underline 2px';
 }
 
 
