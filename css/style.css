@@ -300,7 +300,7 @@ h1 {
     padding-top: 10px;
 }
 
-#contact-container article div p{
+#contact-container article div p {
     margin-top: 10px;
 }
 
@@ -322,7 +322,7 @@ h1 {
     grid-template-columns: 1fr 1fr;
 }
 
-#contact-container article div:nth-child(4) a img{
+#contact-container article div:nth-child(4) a img {
     width: 125px;
 }
 
@@ -437,6 +437,18 @@ h1 {
     box-shadow: #4f4f4f 0px 0px 20px;
 }
 
+#about-container ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 2%;
+}
+
+#about-container ul li {
+    list-style-type:disc;
+    font-family: Avenir;
+    margin-bottom: 6px;
+}
+
 #works-container #work-categories {
     display: grid;
     grid-template-columns: auto auto auto 1fr;
@@ -493,7 +505,7 @@ h1 {
 }
 
 #works-models-container,
-#works-games-container {
+#works-video-container {
     display: none;
 }
 
