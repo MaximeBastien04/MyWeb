@@ -384,6 +384,9 @@ h1 {
 .work-popup.active .popup-content {
     transition: all 300ms ease-in-out;
     transform: translate(-50%, -50%) scale(1);
+    width: 80%;
+    height: 85%;
+    
 }
 
 #about-container {
@@ -524,19 +527,30 @@ h1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto 1fr;
-    grid-gap: 30px;
+    grid-row-gap: 10px;
+    grid-column-gap: 50px;
+}
+
+.work-popup .popup-content h3 {
+    font-family: Avenir;
+    text-align: left;
+    align-self: center;
+    margin-left: 5px;
+    color: #aaaaaa;
 }
 
 .work-popup .popup-content div {
     grid-row: 1/2;
     grid-column: 2/3;
-    text-align: right;
     font-size: 30px;
     margin-right: 10px;
 }
 
-.work-popup .popup-content div p {
+.work-popup .popup-content div:nth-child(2) p {
     cursor: pointer;
+    width: 5%;
+    margin-left: 90%;
+    text-align: right;
 }
 
 .work-popup .popup-content a {
@@ -545,12 +559,12 @@ h1 {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
+    align-self: center;
 }
 
 .work-popup .popup-content a img:nth-child(1) {
     grid-column: 1/2;
     grid-area: 1/2;
-    margin-top: 50px;
 }
 
 .work-popup .popup-content a img:nth-child(2) {
@@ -571,16 +585,30 @@ h1 {
     grid-column: 1/2;
     grid-row: 2/3;
     text-align: left;
-    align-self: center;
+    align-content: center;
 }
 
 .work-popup .popup-content .work-content-info h1 {
-    font-size: 52px;
+    font-size: 46px;
     margin-bottom: 20px;
 }
 
-.work-popup .popup-content .work-content-info h3 {
+.work-popup .popup-content .work-content-info p {
+    font-size: 1vw;
+    text-transform: none;
+    margin-bottom: 14px;
+}
+
+.work-popup .popup-content .work-content-info ul{
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.work-popup .popup-content .work-content-info ul li {
+    font-size: 14px;
+    text-transform: none;
     font-family: Avenir;
+    line-height: 150%;
 }
 
 .work-popup .popup-content iframe,
