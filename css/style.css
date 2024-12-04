@@ -19,36 +19,52 @@ body {
     background-color: #000000;
 }
 
+
 nav {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 30px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
     width: 90%;
     margin: auto;
 }
 
 nav h1 {
     font-size: 32px;
-    text-align: left;
 }
 
 nav ul {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 80px;
-    justify-self: right;
-    grid-column: 2/3;
+    display: flex;
+    gap: 50px;
+    list-style: none;
 }
 
 nav ul li a {
     color: #FFFFFF;
     font-family: Avenir;
     font-size: 20px;
+    text-decoration: none;
 }
 
 nav ul li a.active {
     text-decoration: underline 2px #FFFFFF;
     text-underline-offset: 8px;
+}
+
+/* Hamburger Button */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.hamburger span {
+    width: 30px;
+    height: 3px;
+    background-color: white;
 }
 
 p {
@@ -126,37 +142,34 @@ header#home-header div {
     width: 90%;
     margin: auto;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
     grid-row: 1/2;
     grid-column: 1/2;
-    justify-items: center;
-}
-
-header#home-header div h1:nth-child(1) {
-    grid-column: 1/2;
-}
-
-header#home-header div h1:nth-child(2) {
-    grid-column: 2/3;
-    grid-row: 2/3;
-}
-
-header#home-header div #voornaamTitel {
-    animation: slideLeftOpacity 0.6s ease-out 0s 1;
-}
-
-header#home-header div #achternaamTitel {
-    animation: slideRightOpacity 0.6s ease-out 0s 1;
+    grid-gap: 50px;
 }
 
 header h1 {
     text-transform: uppercase;
     color: #FFFFFF;
     font-size: 100px;
+    text-align: left;
 }
 
 header h1 span {
-    font-family: Raleway;
+    font-size: 202px;
+    margin-left: -5px;
+}
+
+header article p {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+header article a button {
+    color: white;
+    background-color: #000000;
+    margin-top: 25px;
+    padding: 15px 30px;
+    border: #FFFFFF 2px solid;
 }
 
 hr {
@@ -171,9 +184,16 @@ hr {
     margin-bottom: 60px;
 }
 
-#home-works,
-#home-about {
-    margin-top: 100px;
+#home-works
+/*, #home-about*/ { 
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+#home-works .moreWorks {
+    display: block;
+    text-align: center;
+    margin: 50px 0;
 }
 
 article h2 {
@@ -234,7 +254,7 @@ article h2 {
     width: 690px;
     transition: 0.5s;
 }
-
+/* 
 #home-about {
     display: grid;
 }
@@ -264,7 +284,7 @@ article h2 {
 #home-about img {
     grid-column: 1/2;
     grid-row: 1/2;
-}
+} */
 
 #works-container,
 #contact-container,
