@@ -487,14 +487,14 @@ h1 {
     grid-gap: 50px;
 }
 
-.works-category article {
+.works-category .work-article {
     cursor: pointer;
     box-shadow: #080808 0px 0px 20px;
     background-color: #0a0a0a;
     transition: 0.2s;
 }
 
-.works-category article:hover {
+.works-category .work-article:hover {
     box-shadow: #4f4f4f 0px 0px 20px;
     transform: scale(1.02);
     transition: 0.2s;
