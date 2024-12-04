@@ -602,27 +602,37 @@ h1 {
 .work-popup .popup-content .work-content-info p {
     font-size: 1vw;
     text-transform: none;
-    margin-bottom: 14px;
-}
-
-.work-popup .popup-content .smallText p {
-    font-size: 0.8vw;
+    margin-top: 14px;
 }
 
 .work-popup .popup-content .work-content-info strong {
     font-weight: bolder;
 }
 
+.work-popup .popup-content .work-content-info strong + p,
+.work-popup .popup-content .work-content-info strong + ul {
+    margin-top: 2px;
+}
+
 .work-popup .popup-content .work-content-info ul {
     list-style-type: disc;
     margin-left: 20px;
+    margin-top: 10px;
 }
 
 .work-popup .popup-content .work-content-info ul li {
-    font-size: 14px;
+    font-size: 0.8vw;
     text-transform: none;
     font-family: Avenir;
     line-height: 150%;
+}
+
+.work-popup .popup-content .smallText p {
+    font-size: 0.8vw;
+}
+
+.work-popup .popup-content .smallText ul li {
+    font-size: 0.65vw;
 }
 
 .work-popup .popup-content iframe,

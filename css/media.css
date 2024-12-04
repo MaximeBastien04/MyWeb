@@ -1,12 +1,31 @@
 @media only screen and (max-width: 1780px) {
-    #contact-container div h1, 
-    #about-container section h1{
+
+    #contact-container div h1,
+    #about-container section h1 {
         text-transform: uppercase;
         font-size: 90px;
     }
-    
+
     #about-container aside {
         width: 100%;
         margin-left: auto;
+    }
+}
+
+@media only screen and (max-width: 1580px) {
+    .work-popup .popup-content {
+        grid-template-columns: 3fr 2fr;
+    }
+
+    .work-popup .popup-content .work-content-info h1 {
+        font-size: 1.5vw;
+    }
+
+    .work-popup .popup-content .work-content-info p {
+        font-size: 0.8vw;
+    }
+
+    .work-popup .popup-content .smallText ul li {
+        font-size: 0.65vw;
     }
 }
