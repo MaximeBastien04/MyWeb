@@ -1,3 +1,12 @@
+document.addEventListener('DOMContentLoaded', () => {
+    // Show only games works when the page loads
+    showGames();
+});
+
+function isMobile() {
+    return window.innerWidth <= 480; // Adjust the breakpoint as needed
+}
+
 // change work category
 
 const videosBtn = document.getElementById('videos');
@@ -16,7 +25,7 @@ const gamesContainer = document.getElementById('works-games-container');
 
 function showVideos() {
     modelsContainer.style.display = 'none';
-    videoContainer.style.display = 'grid';
+    videoContainer.style.display = isMobile() ? 'block' : 'grid';
     gamesContainer.style.display = 'none';
     modelsBtn.style.textDecoration = 'none';
     videosBtn.style.textDecoration = '#ffffff underline 2px';
@@ -25,7 +34,7 @@ function showVideos() {
 
 function showModels() {
     videoContainer.style.display = 'none';
-    modelsContainer.style.display = 'grid';
+    modelsContainer.style.display = isMobile() ? 'block' : 'grid';
     gamesContainer.style.display = 'none';
     modelsBtn.style.textDecoration = '#ffffff underline 2px';
     videosBtn.style.textDecoration = 'none';
@@ -35,15 +44,11 @@ function showModels() {
 function showGames() {
     videoContainer.style.display = 'none';
     modelsContainer.style.display = 'none';
-    gamesContainer.style.display = 'grid';
+    gamesContainer.style.display = isMobile() ? 'block' : 'grid';
     modelsBtn.style.textDecoration = 'none';
     videosBtn.style.textDecoration = 'none';
     gamesBtn.style.textDecoration = '#ffffff underline 2px';
 }
-
-
-
-
 
 // article pop-ups
 

@@ -1,33 +1,7 @@
-@media only screen and (max-width: 480px) {
-
-    nav ul {
-        display: none;
-        flex-direction: column;
-        gap: 20px;
-        background-color: #333;
-        position: absolute;
-        top: 70px;
-        right: 0;
-        width: 100%;
-        padding: 20px 0;
-    }
-
-    nav ul.open {
-        display: flex;
-    }
-
-    .hamburger {
-        display: flex;
-    }
-}
-
-
-
-
 @media only screen and (max-width: 1780px) {
 
-    #contact-container div h1,
-    #about-container section h1 {
+    #about-container section h1,
+    #contact-container div h1 {
         text-transform: uppercase;
         font-size: 90px;
     }
@@ -53,5 +27,226 @@
 
     .work-popup .popup-content .smallText ul li {
         font-size: 0.65vw;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+
+    /* Introsequence */
+    .intro,
+    .introOverlay {
+        display: none;
+    }
+
+    /* Nav */
+    nav ul {
+        display: none;
+        flex-direction: column;
+        gap: 20px;
+        background-color: #333;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        padding: 50px 20px;
+        z-index: 9;
+        transition: transform 0.3s ease-in-out;
+        padding-top: 150px;
+    }
+
+    nav ul.open {
+        display: flex;
+    }
+
+    nav ul li {
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    nav ul li a {
+        font-size: 32px;
+    }
+
+    button:hover {
+        background-color: #333;
+        border: none;
+    }
+
+    .hamburger {
+        display: flex;
+        background: none;
+        z-index: 10;
+        background-color: #333;
+    }
+
+    /* Home page */
+    header {
+        text-align: center;
+    }
+
+    header h1,
+    header h1 span {
+        display: none;
+    }
+
+    header h2 {
+        display: block;
+        text-transform: uppercase;
+        font-size: 30px;
+        margin-top: 20px;
+    }
+
+    header#home-header div {
+        display: block;
+    }
+
+    header#home-header {
+        display: block;
+    }
+
+    header#home-header img {
+        margin-top: 50px;
+    }
+
+    #home-works hr {
+        margin-bottom: 10px;
+    }
+
+    .slider {
+        height: 200px;
+        position: relative;
+        display: grid;
+        place-items: center;
+        overflow: hidden;
+    }
+
+    .slide-track {
+        display: flex;
+        width: calc(200px * 12);
+        animation: scroll 40s linear infinite;
+    }
+
+    #home-works .slider:nth-child(4) {
+        display: none;
+    }
+
+    #home-works .moreWorks {
+        margin: 10px 0;
+    }
+
+    /* About page */
+    #about-container,
+    #works-container,
+    #contact-container {
+        display: block;
+        margin-top: 20px;
+        margin-bottom: 75px;
+    }
+
+    #about-container aside {
+        display: block;
+    }
+
+    #about-container aside img {
+        height: 20vh;
+        margin-top: 20px;
+    }
+
+    #about-container aside img:nth-child(2),
+    #about-container aside img:nth-child(3),
+    #about-container aside img:nth-child(4) {
+        display: none;
+    }
+
+
+    /* Contact page */
+    #about-continer section h1,
+    #contact-container div h1 {
+        font-size: 36px;
+    }
+
+    #contact-container {
+        display: block;
+    }
+
+    #contact-container h1 {
+        display: none;
+    }
+
+    #contact-container article {
+        padding: 10px;
+    }
+
+    #contact-container article div:nth-child(4) a img {
+        width: 100px;
+    }
+
+    #contact-container article div:nth-child(4) a:nth-child(2) {
+        justify-self: right;
+    }
+
+    /* Works page */
+    #works-container > h1 {
+        font-size: 80px;
+        text-align: center;
+    }
+
+    #works-container #work-categories { 
+        display: block;
+        text-align: center;
+    }
+
+    #works-container #work-categories h2{ 
+        margin-bottom: 25px;
+    }
+
+    #works-container .works-category {
+        display: block;
+    }
+
+    #works-container .works-category .work-article {
+        margin-bottom: 30px;
+    }
+
+    .work-popup .popup-content {
+        display: block;
+        z-index: 300;
+    }
+    
+    .work-popup .popup-content .work-content-info h1 {
+        font-size: 24px;
+    }
+    
+    .work-popup .popup-content .work-content-info p {
+        font-size: 12px;
+        margin: 0;
+    }
+
+    .work-popup .popup-content a img:nth-child(1) {
+        margin-top: 10px;
+    }
+    
+    .work-popup .popup-content h3 {
+        display: none;
+        margin-top: 10px;
+    }
+
+    .work-popup .popup-content .work-content-info .extraInfo {
+        display: none;
+    }
+
+    .work-popup .popup-content .smallText ul li,
+    .work-popup .popup-content .smallText p {
+        font-size: 2.5vw;
+    }
+
+    .work-popup .popup-content iframe {
+        height: 25%;
+        margin-top: 10px;
+    }
+
+    .work-popup .popup-content .sketchfab-embed-wrapper {
+        height: 25%;
     }
 }

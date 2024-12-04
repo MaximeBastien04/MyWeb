@@ -21,9 +21,8 @@ body {
 
 
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     padding: 30px 0;
     width: 90%;
     margin: auto;
@@ -59,6 +58,10 @@ nav ul li a.active {
     background: none;
     border: none;
     cursor: pointer;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1100;
 }
 
 .hamburger span {
@@ -135,6 +138,7 @@ header#home-header img {
     grid-row: 1/2;
     grid-column: 1/2;
     object-fit: cover;
+    z-index: 1;
 }
 
 header#home-header div {
@@ -145,6 +149,7 @@ header#home-header div {
     grid-row: 1/2;
     grid-column: 1/2;
     grid-gap: 50px;
+    z-index: 2;
 }
 
 header h1 {
@@ -157,6 +162,10 @@ header h1 {
 header h1 span {
     font-size: 202px;
     margin-left: -5px;
+}
+
+header h2 {
+    display: none;
 }
 
 header article p {
@@ -254,37 +263,6 @@ article h2 {
     width: 690px;
     transition: 0.5s;
 }
-/* 
-#home-about {
-    display: grid;
-}
-
-#home-about div {
-    grid-column: 1/2;
-    grid-row: 1/2;
-    align-self: center;
-}
-
-#home-about div p {
-    text-align: center;
-    width: 35%;
-    margin: auto;
-    margin-bottom: 30px;
-}
-
-#home-about div div {
-    display: flex;
-    justify-content: center;
-}
-
-#home-about div div button {
-    margin-top: 10px;
-}
-
-#home-about img {
-    grid-column: 1/2;
-    grid-row: 1/2;
-} */
 
 #works-container,
 #contact-container,
@@ -297,7 +275,7 @@ article h2 {
 
 #contact-container {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 3fr 2fr;
     grid-gap: 20px;
 }
 
@@ -307,7 +285,6 @@ h1 {
 }
 
 #contact-container article {
-    border: white solid 1px;
     margin-top: 20px;
     padding: 50px;
 }
