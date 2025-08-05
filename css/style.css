@@ -195,7 +195,9 @@ hr {
 }
 
 #home-works
-/*, #home-about*/ { 
+
+/*, #home-about*/
+    {
     margin-top: 50px;
     margin-bottom: 100px;
 }
@@ -263,6 +265,12 @@ article h2 {
 .slide:hover {
     width: 690px;
     transition: 0.5s;
+}
+
+.slide img {
+    width: 100%;
+    object-fit: cover;
+    height: 200px;
 }
 
 #works-container,
@@ -494,6 +502,12 @@ h1 {
     transition: 0.2s;
 }
 
+.works-category .work-article img {
+    height: 220px;
+    object-fit: cover;
+    width: 100%;
+}
+
 .works-category .work-article:hover {
     box-shadow: #4f4f4f 0px 0px 20px;
     transform: scale(1.02);
@@ -503,11 +517,6 @@ h1 {
 .works-category article p {
     color: white;
     margin: 5px 10px;
-    transition: 0.2s;
-}
-
-.works-category article:hover p {
-    font-weight: bolder;
     transition: 0.2s;
 }
 
@@ -607,8 +616,8 @@ h1 {
     font-weight: bolder;
 }
 
-.work-popup .popup-content .work-content-info strong + p,
-.work-popup .popup-content .work-content-info strong + ul {
+.work-popup .popup-content .work-content-info strong+p,
+.work-popup .popup-content .work-content-info strong+ul {
     margin-top: 2px;
 }
 
