@@ -1,80 +1,166 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Show only games works when the page loads
-    showGames();
+    loadGames();
 });
 
-function isMobile() {
-    return window.innerWidth <= 480; // Adjust the breakpoint as needed
+async function loadGames() {    
+    try {
+        const response = await fetch('../data/games.json');
+        const gamesData = await response.json();
+
+        const container = document.getElementById("works-category-container");
+        container.innerHTML = "";
+
+        gamesData.forEach(game => {
+            const htmlString = `
+                <article class="work-article" data-popup="${game.id}">
+                    <img src="${game.thumbnail}" alt="${game.title}">
+                    <p>${game.title}</p>
+                </article>
+                <div class="work-popup" id="${game.id}">
+                    <div class="overlay"></div>
+                    <div class="popup-content">
+                        <h3>${game.date}</h3>
+                        <div>
+                            <p class="close-popup">&#10006;</p>
+                        </div>
+                        <div class="work-content-info">
+                            <h1>${game.title}</h1>
+                            <article class="mainInfo">
+                                <p>${game.description}
+                                </p>
+                            </article>
+                            <article class="extraInfo">
+                                <p>${game.key_research}
+                                </p>
+                                <p>${game.results}
+                                </p>
+                                <p>Tools Used: ${game.tools}</p>
+                            </article>
+                        </div>
+                        <a href="${game.link}" target="_blank">
+                            <img src="${game.thumbnail}">
+                            <img src="../images/play_button_icon.png">
+                        </a>
+                    </div>
+                </div>`;
+
+            container.insertAdjacentHTML('beforeend', htmlString);
+        });
+
+
+        const modalBtns = document.querySelectorAll('.work-article');
+        modalBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const modalId = btn.getAttribute('data-popup');
+                const modal = document.getElementById(modalId);
+                if (modal) modal.classList.add('active');
+            });
+        });
+
+        const closeBtns = document.querySelectorAll('.close-popup');
+        closeBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const popup = btn.closest(".work-popup");
+                const video = popup.querySelector('iframe');
+                if (video) {
+                    const src = video.src;
+                    video.src = src; // reset video on close
+                }
+                popup.classList.remove('active');
+            });
+        });
+
+    } catch (error) {
+        console.error("Error loading games data:", error);
+    }
 }
 
-// change work category
+async function loadVideos() {
+    try {
+        const response = await fetch('../data/videos.json');
+        const videosData = await response.json();
+
+        const container = document.getElementById("works-category-container");
+        container.innerHTML = "";
+
+        videosData.forEach(video => {
+            const htmlString = `
+                <article class="work-article" data-popup="${video.id}">
+                    <img src="${video.thumbnail}" alt="${video.title}">
+                    <p>${video.title}</p>
+                </article>
+                <div class="work-popup" id="${video.id}">
+                    <div class="overlay"></div>
+                    <div class="popup-content">
+                        <h3>${video.date}</h3>
+                        <div>
+                            <p class="close-popup">&#10006;</p>
+                        </div>
+                        <div class="work-content-info">
+                            <h1>${video.title}</h1>
+                            <article class="mainInfo">
+                                <p>${video.description}
+                                </p>
+                            </article>
+                            <article class="extraInfo">
+                                <p>${video.key_research}
+                                </p>
+                                <p>${video.results}
+                                </p>
+                                <p>Tools Used: ${video.tools}</p>
+                            </article>
+                        </div>
+                        <iframe class="video" width="560" height="315" src="${video.youtube}"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>`;
+
+            container.insertAdjacentHTML('beforeend', htmlString);
+        });
+
+
+        const modalBtns = document.querySelectorAll('.work-article');
+        modalBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const modalId = btn.getAttribute('data-popup');
+                const modal = document.getElementById(modalId);
+                if (modal) modal.classList.add('active');
+            });
+        });
+
+        const closeBtns = document.querySelectorAll('.close-popup');
+        closeBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const popup = btn.closest(".work-popup");
+                const video = popup.querySelector('iframe');
+                if (video) {
+                    const src = video.src;
+                    video.src = src; // reset video on close
+                }
+                popup.classList.remove('active');
+            });
+        });
+
+    } catch (error) {
+        console.error("Error loading games data:", error);
+    }
+}
 
 const videosBtn = document.getElementById('videos');
-videosBtn.addEventListener('click', showVideos);
-
-const modelsBtn = document.getElementById('3dModels');
-modelsBtn.addEventListener('click', showModels);
-
-const gamesBtn = document.getElementById('games');
-gamesBtn.addEventListener('click', showGames);
-
-
-const videoContainer = document.getElementById('works-video-container');
-const modelsContainer = document.getElementById('works-models-container');
-const gamesContainer = document.getElementById('works-games-container');
-
-function showVideos() {
-    modelsContainer.style.display = 'none';
-    videoContainer.style.display = isMobile() ? 'block' : 'grid';
-    gamesContainer.style.display = 'none';
-    modelsBtn.style.textDecoration = 'none';
-    videosBtn.style.textDecoration = '#ffffff underline 2px';
-    gamesBtn.style.textDecoration = 'none';
-}
-
-function showModels() {
-    videoContainer.style.display = 'none';
-    modelsContainer.style.display = isMobile() ? 'block' : 'grid';
-    gamesContainer.style.display = 'none';
-    modelsBtn.style.textDecoration = '#ffffff underline 2px';
-    videosBtn.style.textDecoration = 'none';
-    gamesBtn.style.textDecoration = 'none';
-}
-
-function showGames() {
-    videoContainer.style.display = 'none';
-    modelsContainer.style.display = 'none';
-    gamesContainer.style.display = isMobile() ? 'block' : 'grid';
-    modelsBtn.style.textDecoration = 'none';
-    videosBtn.style.textDecoration = 'none';
-    gamesBtn.style.textDecoration = '#ffffff underline 2px';
-}
-
-// article pop-ups
-
-let modalBtns = document.querySelectorAll('.work-article');
-
-modalBtns.forEach(function (btn) {
-    btn.onclick = function () {
-        let modal = btn.getAttribute('data-popup');
-        document.querySelector('#'+ modal).classList.toggle('active');
-    };
+videosBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    loadVideos();
+    videosBtn.style.textDecoration = "underline";
+    gamesBtn.style.textDecoration = "none";
 });
 
-let videoIframes = document.querySelectorAll('.video');
-let closeBtns = document.querySelectorAll(".close-popup");
 
-// close iframe when popup is gone
-for (let i = 0; i < videoIframes.length; i++) {
-    videoIframes[i].setAttribute('id', 'video' + i)
-}
-
-closeBtns.forEach(function (btn) {
-    btn.onclick = function () {
-        for(let i = 0; i < videoIframes.length; i++){
-            document.getElementById(`video${i}`).src = document.getElementById(`video${i}`).src;
-        }
-        let modal = (btn.closest(".work-popup").classList.toggle('active'));
-
-    };
+const gamesBtn = document.getElementById('games');
+gamesBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    loadGames();
+    gamesBtn.style.textDecoration = "underline";
+    videosBtn.style.textDecoration = "none";
 });

@@ -1,0 +1,99 @@
+[
+    {
+        "id": "box-puzzle-game",
+        "title": "Box Puzzle Game",
+        "date": "20/05/2024",
+        "thumbnail": "../images/box_puzzle_game.jpg",
+        "description": [
+            "This project is a puzzle-based game developed in Unity, designed as my final work for the 3D Games course. It features dynamic object interactions, allowing players to pick up, rotate, and manipulate objects to solve puzzles. Key gameplay elements include unlocking compartments, using animations and physics-based mechanics, and integrating audio for immersive feedback.",
+            "This was my first experience developing a game in Unity, and it highlights my ability to implement complex gameplay mechanics and interactive environments."
+        ],
+        "link": "https://maximebastien.itch.io/box-puzzle-game"
+    },
+    {
+        "id": "journalist-horror-game",
+        "title": "Journalist Horror Game Demo (WIP)",
+        "date": "17/10/2024",
+        "thumbnail": "../images/journalist_horror_game.png",
+        "description": [
+            "In this project, I focused on developing gameplay mechanics and interactive elements for a survival-horror puzzle game where players explore a dark, mysterious environment, solve puzzles, and avoid a lurking monster. My role involved coding, while a friend from Howest created all the 3D assets."
+        ],
+        "key_research": [
+            "Animations: Completed furniture animations and integrated sound effects for all interactive objects, enhancing immersion.",
+            "Particle System: Implemented a dust particle system using a tutorial to amplify immersion in the abandoned house setting. Adjusted particles dynamically based on player actions\u2014particles increase in size and speed when the player walks or runs, simulating dust clouds.",
+            "Post-Processing: Applied post-processing profiles to heighten the eerie atmosphere.",
+            "Sound Integration: Learned to sync audio with animations using animation events, allowing precise timing for multiple audio clips."
+        ],
+        "challenges": [
+            "Dynamic Particle Adjustments: Initially, I hadn't planned for particle changes through code. By examining the PlayerScript, I modified the particles to react based on player movements, creating a more interactive environment.",
+            "Sound Effects for Animations: Adding sound to animations proved challenging due to multiple audio clips. I resolved this by incorporating animation events and tracking object states with boolean logic, ensuring accurate audio playback."
+        ],
+        "results": "The combination of post-processing, particle effects, and sound design significantly enhances the game's immersion. This sprint deepened my understanding of integrating audio and particles into interactive elements.",
+        "tools": [
+            "Unity",
+            "Particle System",
+            "Animation Events",
+            "Post-Processing",
+            "C#"
+        ],
+        "link": "https://maximebastien.itch.io/journalist-horror-game"
+    },
+    {
+        "id": "twoD-unity-testing",
+        "title": "2D Unity Testing",
+        "date": "21/10/2024",
+        "thumbnail": "../images/2d_unity_testing.png",
+        "description": [
+            "During my Expert Lab course, I completed two two-week sprints focusing on 2D game development in Unity."
+        ],
+        "sprints": [
+            {
+                "title": "Sprint 1: Animation, Scene Transitions & Player Movement",
+                "details": "I explored character animation and scene management by designing a silhouetted character in Illustrator and animating it in Unity. I implemented player movement and scene transitions with the help of tutorials and ChatGPT.",
+                "challenges": [
+                    "A scene transition issue required troubleshooting through ChatGPT and manual code adjustments."
+                ],
+                "outcome": "I successfully animated my character, implemented smooth scene transitions, and enabled player movement."
+            },
+            {
+                "title": "Sprint 2: NPC Interaction, Color Transitions & Rigging",
+                "details": "I focused on NPC dialogues, color transitions, and character rigging. I rigged my 2D character using Unity's skinning editor and implemented a system where the background color changes during NPC interactions.",
+                "challenges": [
+                    "Dialogue integration and color transitions caused initial issues, but solutions were found in video comments and further research."
+                ],
+                "outcome": "I enhanced the game's emotional depth by linking NPC interactions to color changes and refined character animation through rigging."
+            }
+        ],
+        "takeaways": "These sprints improved my problem-solving and research skills, helping me tackle complex challenges through iterative prototypes. The results are crucial for my final work and future game development projects.",
+        "tools": [
+            "Unity",
+            "Adobe Illustrator",
+            "ChatGPT"
+        ],
+        "link": "https://maximebastien.itch.io/2d-unity-test"
+    },
+    {
+        "id": "final-work-test",
+        "title": "Final Work Test",
+        "date": "21/10/2024",
+        "thumbnail": "../images/final_work_test.png",
+        "description": [
+            "During this sprint, I focused on developing the visual style and creating interactive assets for my final work in Unity, refining both character design and environment elements."
+        ],
+        "key_research": [
+            "Visual Style & Asset Creation: Designed characters and environment assets in Illustrator, then recreated a scene in Unity to ensure stylistic consistency.",
+            "Character Movement & Lighting: Implemented horizontal player movement and experimented with 2D lighting using Unity's URP. I made the lighting interactive, allowing players to toggle lights via a switch.",
+            "Inverse Kinematics & Animation: Learned and applied inverse kinematics for smoother animations, resulting in idle and walking animations."
+        ],
+        "challenges": [
+            "URP Lighting Confusion: Some URP file names differed due to an outdated tutorial. I resolved this through trial and error until the correct files were identified.",
+            "Walking Animation Difficulty: Creating fluid movement was challenging, so I referenced frame-by-frame animation cycles to improve accuracy."
+        ],
+        "results": "This sprint established a solid foundation for my final work by defining the game's visual identity and enhancing interactive elements. Inverse kinematics simplified future animation tasks, particularly for item interactions.",
+        "tools": [
+            "Unity",
+            "Adobe Illustrator"
+        ],
+        "link": "https://maximebastien.itch.io/final-work-test"
+    }
+]
