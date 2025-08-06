@@ -2,7 +2,7 @@
         "id": "eternal-gaze",
         "title": "Eternal Gaze",
         "date": "03/08/2025",
-        "thumbnail": "../images/works/games/eternal_gaze.png",
+        "thumbnail": "eternal_gaze.png",
         "description": [
             "Game jam project"
         ],
@@ -12,7 +12,7 @@
         "id": "radio-silence",
         "title": "Radio Silence",
         "date": "17/10/2024",
-        "thumbnail": "../images/works/games/radio_silence.png",
+        "thumbnail": "radio_silence.png",
         "description": [
             "In this project, I focused on developing gameplay mechanics and interactive elements for a survival-horror puzzle game where players explore a dark, mysterious environment, solve puzzles, and avoid a lurking monster. My role involved coding, while a friend from Howest created all the 3D assets."
         ],
@@ -40,7 +40,7 @@
         "id": "hope",
         "title": "HOPE",
         "date": "13/06/2025",
-        "thumbnail": "../images/works/games/hope.jpg",
+        "thumbnail": "hope.jpg",
         "description": [
             "hope"
         ],
@@ -50,7 +50,7 @@
         "id": "magic-color-mix",
         "title": "Magic Color Mix",
         "date": "03/04/2025",
-        "thumbnail": "../images/works/games/magic_color_mix.png",
+        "thumbnail": "magic_color_mix.png",
         "description": [
             "Magic Color Mix"
         ],
@@ -60,7 +60,7 @@
         "id": "counting-animals-with-snow-white",
         "title": "Counting Animals with Snow White",
         "date": "29/01/2025",
-        "thumbnail": "../images/works/games/counting_animals_with_snow_white.png",
+        "thumbnail": "counting_animals_with_snow_white.png",
         "description": [
             "Counting Animals with Snow White"
         ],
@@ -70,7 +70,7 @@
         "id": "box-puzzle-game",
         "title": "Box Puzzle Game",
         "date": "20/05/2024",
-        "thumbnail": "../images/works/games/box_puzzle_game.jpg",
+        "thumbnail": "box_puzzle_game.jpg",
         "description": [
             "This project is a puzzle-based game developed in Unity, designed as my final work for the 3D Games course. It features dynamic object interactions, allowing players to pick up, rotate, and manipulate objects to solve puzzles. Key gameplay elements include unlocking compartments, using animations and physics-based mechanics, and integrating audio for immersive feedback.",
             "This was my first experience developing a game in Unity, and it highlights my ability to implement complex gameplay mechanics and interactive environments."

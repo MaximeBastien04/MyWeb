@@ -3,7 +3,7 @@
         "id": "museum_fight",
         "title": "Museum fight || 3D Animation",
         "date": "28/04/2024",
-        "thumbnail": "../images/works/videos/museum_fight.jpg",
+        "thumbnail": "museum_fight.jpg",
         "description": "For my 3D modeling course, I created a fully animated scene featuring Bender from Futurama. I began by modeling Bender from a character sheet I found online, then rigged and skinned him in Maya. The texturing process was done using Adobe Substance 3D Painter, bringing Bender's metallic look to life. The final animation takes place in a museum-like environment, where Bender walks past statues of characters modeled by my classmates. To streamline the animation process, I utilized Mixamo for character animations and implemented them in Unity, allowing me to gain experience with Unity's animation system. This assignment taught me the fundamentals of 3D modeling, rigging, and skinning in Maya, as well as how to integrate animations into Unity—skills I now apply in my game development projects.",
         "tools": "Maya, Adobe Substance 3D Painter, Unity, Mixamo",
         "youtube": "https://www.youtube.com/embed/NZ5Saq4sOlY"
@@ -12,7 +12,7 @@
         "id": "lyrical_kinetic_typography",
         "title": "Lyrical Kinetic Typography || Dream On - Aerosmith",
         "date": "01/12/2022",
-        "thumbnail": "../images/works/videos/lyrical_kinetic_typography.jpg",
+        "thumbnail": "lyrical_kinetic_typography.jpg",
         "description": "For my Motion course, I created a lyrical kinetic typography video set to Dream On by Aerosmith. I designed all visual assets in Adobe Illustrator and animated them in Adobe After Effects. The project involved synchronizing text animations with the song's rhythm and mood, enhancing the emotional impact through dynamic visuals.\n\nThis assignment strengthened my skills in kinetic typography, motion design, and audio-visual synchronization.",
         "tools": "Adobe Illustrator, Adobe After Effects",
         "youtube": "https://www.youtube.com/embed/NZ5Saq4sOlY"
@@ -21,7 +21,7 @@
         "id": "eindmontage",
         "title": "Eindmontage || Star Crusaders",
         "date": "26/05/2022",
-        "thumbnail": "../images/works/videos/eindmontage.jpg",
+        "thumbnail": "eindmontage.jpg",
         "description": "For my high school final project, I created Star Crusaders, a fictional travel agency focused on Rio de Janeiro. This montage showcases the various components I developed, including the logo, travel guides, promotional video, website, and other branded materials.\n\nI edited the montage using Adobe Premiere Pro and After Effects, incorporating dynamic visuals to present the project cohesively. This project helped me enhance my branding, video editing, and design skills, providing a strong foundation for future multimedia projects.",
         "tools": "Adobe Premiere Pro, Adobe After Effects",
         "youtube": "https://www.youtube.com/embed/SFrD1PeXmxw"
@@ -30,7 +30,7 @@
         "id": "what_the_font",
         "title": "What The Font?!",
         "date": "06/06/2021",
-        "thumbnail": "../images/works/videos/what_the_font.jpg",
+        "thumbnail": "what_the_font.jpg",
         "description": "For my high school Motion exam, I created a short documentary animation about the history of the Helvetica font. Using Adobe After Effects, I visually narrated its origins and evolution, applying all the motion design skills I had learned up to that point.\n\nThis project not only deepened my understanding of motion graphics but also served as a strong foundation for my college assignments, where I continued to build on these skills in more advanced projects.",
         "tools": "Adobe After Effects",
         "youtube": "https://www.youtube.com/embed/wNSqY8VxXw8"
@@ -39,7 +39,7 @@
         "id": "aspect_ratio",
         "title": "Aspect Ratio || NL",
         "date": "28/05/2021",
-        "thumbnail": "../images/works/videos/aspect_ratio.jpg",
+        "thumbnail": "aspect_ratio.jpg",
         "description": "For my high school Motion course, I created an animated documentary on the history and impact of aspect ratios in television, cinema, and videography. I provided the voice-over narration to guide viewers through the evolution of aspect ratios and their influence on visual media.\n\nThe visual assets were designed in Adobe Illustrator, and I animated the entire video in Adobe After Effects, applying motion design techniques to enhance the educational experience.",
         "tools": "Adobe Illustrator, Adobe After Effects",
         "youtube": "https://www.youtube.com/embed/58zTGjM9kSk"
@@ -48,7 +48,7 @@
         "id": "rio_exploration",
         "title": "Rio's Exploration Intro Sequence",
         "date": "18/02/2022",
-        "thumbnail": "../images/works/videos/rio's_exploration.jpg",
+        "thumbnail": "rio's_exploration.jpg",
         "description": "As part of my high school final project, where I developed a travel agency focused on Rio de Janeiro, I created an intro sequence to showcase the city. Using motion tracking, I seamlessly integrated text into the moving background, giving the video a dynamic and engaging feel.\n\nThe entire sequence was edited in Adobe Premiere Pro, allowing me to enhance my video editing and motion tracking skills, which became essential for future multimedia projects.",
         "tools": "Adobe Premiere Pro",
         "youtube": "https://www.youtube.com/embed/yHWcYWWsAxo"
@@ -57,7 +57,7 @@
         "id": "matte_painting",
         "title": "Matte Painting Mountain",
         "date": "02/05/2022",
-        "thumbnail": "../images/works/videos/matte_painting.jpg",
+        "thumbnail": "matte_painting.jpg",
         "description": "For this high school Motion assignment, I created a matte painting, a technique historically used in classic cinematography to create surrealistic backgrounds before the rise of VFX and AI. In this project, I combined a mountain and a temple into a real-world setting.\n\nI started by cutting out the mountain from a photograph using Adobe Photoshop and placing the temple on top. I then integrated the composite into a video I shot in a field, blending it seamlessly using Adobe Premiere Pro. This project taught me the fundamentals of matte painting and compositing, blending traditional techniques with modern editing tools.",
         "tools": "Adobe Photoshop, Adobe Premiere Pro",
         "youtube": "https://www.youtube.com/embed/yDFYstCEyxM"

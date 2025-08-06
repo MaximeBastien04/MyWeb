@@ -13,7 +13,7 @@ async function loadGames() {
         gamesData.forEach(game => {
             const htmlString = `
                 <article class="work-article" data-popup="${game.id}">
-                    <img src="${game.thumbnail}" alt="${game.title}">
+                    <img src="../images/works/games/${game.thumbnail}" alt="${game.title}">
                     <p>${game.title}</p>
                 </article>
                 <div class="work-popup" id="${game.id}">
@@ -38,8 +38,8 @@ async function loadGames() {
                             </article>
                         </div>
                         <a href="${game.link}" target="_blank">
-                            <img src="${game.thumbnail}">
-                            <img src="../images/play_button_icon.png">
+                            <img src="../images/works/games/${game.thumbnail}">
+                            <img src="../images/icons/play_button_icon.png">
                         </a>
                     </div>
                 </div>`;
@@ -86,7 +86,7 @@ async function loadVideos() {
         videosData.forEach(video => {
             const htmlString = `
                 <article class="work-article" data-popup="${video.id}">
-                    <img src="${video.thumbnail}" alt="${video.title}">
+                    <img src="../images/works/videos/${video.thumbnail}" alt="${video.title}">
                     <p>${video.title}</p>
                 </article>
                 <div class="work-popup" id="${video.id}">

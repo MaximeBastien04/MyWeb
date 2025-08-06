@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
 async function loadGames() {
     
     try {
-        const response = await fetch('../data/games.json');
+        const response = await fetch('./data/games.json');
         const gamesData = await response.json();
 
         const container = document.getElementById("slide-track");
@@ -16,7 +16,7 @@ async function loadGames() {
             for (let j = 0; j < 6; j++) {
                 const htmlString = `
                     <a href="${gamesData[j].link}" class="slide" target="_blank">
-                        <img src="./images/${gamesData[j].thumbnail}">
+                        <img src="./images/works/games/${gamesData[j].thumbnail}">
                     </a>`;
                 container.insertAdjacentHTML('beforeend', htmlString);
             }
@@ -29,7 +29,7 @@ async function loadGames() {
 
 async function loadVideos() {
     try {
-        const response = await fetch('../data/videos.json');
+        const response = await fetch('./data/videos.json');
         const videosData = await response.json();
 
         const container = document.getElementById("slide-track-right");
@@ -39,7 +39,7 @@ async function loadVideos() {
             for (let j = 0; j < 6; j++) {
                 const htmlString = `
                     <a href="${videosData[j].link}" class="slide" target="_blank">
-                        <img src="./images/${videosData[j].thumbnail}">
+                        <img src="./images/works/videos/${videosData[j].thumbnail}">
                     </a>`;
                 container.insertAdjacentHTML('beforeend', htmlString);
             }
