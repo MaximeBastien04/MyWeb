@@ -234,7 +234,7 @@ article h2 {
 }
 
 .slider {
-    height: 230px;
+    padding: 5px;
     position: relative;
     display: grid;
     place-items: center;
