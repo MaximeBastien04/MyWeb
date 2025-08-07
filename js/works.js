@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     loadGames();
 });
 
-async function loadGames() {    
+async function loadGames() {
     try {
         const response = await fetch('../data/games.json');
         const gamesData = await response.json();
@@ -26,14 +26,7 @@ async function loadGames() {
                         <div class="work-content-info">
                             <h1>${game.title}</h1>
                             <article class="mainInfo">
-                                <p>${game.description}
-                                </p>
-                            </article>
-                            <article class="extraInfo">
-                                <p>${game.key_research}
-                                </p>
-                                <p>${game.results}
-                                </p>
+                                <p>${game.description}</p>
                                 <p>Tools Used: ${game.tools}</p>
                             </article>
                         </div>
@@ -99,14 +92,7 @@ async function loadVideos() {
                         <div class="work-content-info">
                             <h1>${video.title}</h1>
                             <article class="mainInfo">
-                                <p>${video.description}
-                                </p>
-                            </article>
-                            <article class="extraInfo">
-                                <p>${video.key_research}
-                                </p>
-                                <p>${video.results}
-                                </p>
+                                <p>${video.description}</p>
                                 <p>Tools Used: ${video.tools}</p>
                             </article>
                         </div>

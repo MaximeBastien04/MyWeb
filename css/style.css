@@ -586,13 +586,25 @@ h1 {
     text-align: right;
 }
 
-.work-popup .popup-content a {
+.work-popup .popup-content .work-content-info+a {
     grid-row: 2/3;
     grid-column: 2/3;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     align-self: center;
+}
+
+.work-popup .popup-content .work-content-info .mainInfo a {
+    color: white;
+    text-decoration: underline white;
+    transition: 0.2s;
+}
+
+.work-popup .popup-content .work-content-info .mainInfo a:hover{
+    color: rgb(175, 175, 175);
+    text-decoration: underline rgb(175, 175, 175);
+    transition: 0.2s;
 }
 
 .work-popup .popup-content a img:nth-child(1) {
@@ -630,6 +642,10 @@ h1 {
     font-size: 1vw;
     text-transform: none;
     margin-top: 14px;
+}
+
+.work-popup .popup-content .work-content-info p span{
+    font-weight: bolder;
 }
 
 .work-popup .popup-content .work-content-info strong {

@@ -6,7 +6,7 @@
         "thumbnail": "museum_fight.jpg",
         "description": "For my 3D modeling course, I created a fully animated scene featuring Bender from Futurama. I began by modeling Bender from a character sheet I found online, then rigged and skinned him in Maya. The texturing process was done using Adobe Substance 3D Painter, bringing Bender's metallic look to life. The final animation takes place in a museum-like environment, where Bender walks past statues of characters modeled by my classmates. To streamline the animation process, I utilized Mixamo for character animations and implemented them in Unity, allowing me to gain experience with Unity's animation system. This assignment taught me the fundamentals of 3D modeling, rigging, and skinning in Maya, as well as how to integrate animations into Unity—skills I now apply in my game development projects.",
         "tools": "Maya, Adobe Substance 3D Painter, Unity, Mixamo",
-        "youtube": "https://www.youtube.com/embed/NZ5Saq4sOlY"
+        "youtube": "https://www.youtube.com/embed/t3bfoSoH-4E?si=xP7rgCS6nQ_4LMXf"
     },
     {
         "id": "lyrical_kinetic_typography",
