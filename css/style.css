@@ -146,7 +146,7 @@ header#home-header #slideshow {
 }
 
 .slide-img {
-    filter: brightness(0.3);
+    filter: brightness(0.4);
     grid-column: 1/2;
     grid-row: 1/2;
     width: 100%;
