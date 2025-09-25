@@ -38,7 +38,7 @@ async function loadVideos() {
         for (let i = 0; i < 2; i++) {
             for (let j = 0; j < 6; j++) {
                 const htmlString = `
-                    <a href="${videosData[j].link}" class="slide" target="_blank">
+                    <a href="${videosData[j].youtube}" class="slide" target="_blank">
                         <img src="./images/works/videos/${videosData[j].thumbnail}">
                     </a>`;
                 container.insertAdjacentHTML('beforeend', htmlString);

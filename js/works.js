@@ -96,7 +96,7 @@ async function loadVideos() {
                                 <p>Tools Used: ${video.tools}</p>
                             </article>
                         </div>
-                        <iframe class="video" width="560" height="315" src="${video.youtube}"
+                        <iframe class="video" width="560" height="315" src="${video.youtube_embed}"
                             title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             allowfullscreen></iframe>
