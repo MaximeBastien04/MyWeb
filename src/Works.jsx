@@ -97,9 +97,8 @@ function Works() {
 
                             {/* POPUP */}
                             <div
-                                className={`work-popup ${
-                                    activePopup === work.id ? "active" : ""
-                                }`}
+                                className={`work-popup ${activePopup === work.id ? "active" : ""
+                                    }`}
                             >
                                 <div
                                     className="overlay"

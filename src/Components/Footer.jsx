@@ -13,8 +13,8 @@ function Footer() {
                         <a href="contact.html"><button>Contact</button></a>
                     </div>
                 </section>
-                <aside class="copyright">
-                    <h4>Made by Maxime Bastien</h4>
+                <aside>
+                    <p>© Maxime Bastien, 2026</p>
                 </aside>
             </footer>
         </>

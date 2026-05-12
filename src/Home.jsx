@@ -2,33 +2,25 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 function Home() {
-    // =========================
+
     // SLIDESHOW STATES
-    // =========================
     const [images, setImages] = useState([]);
     const [slide1, setSlide1] = useState("");
     const [slide2, setSlide2] = useState("");
     const [showingFirst, setShowingFirst] = useState(true);
     const [currentIndex, setCurrentIndex] = useState(0);
 
-    // =========================
     // WORK SLIDER STATES
-    // =========================
     const [games, setGames] = useState([]);
     const [videos, setVideos] = useState([]);
 
-    // =========================
-    // INITIAL LOAD
-    // =========================
     useEffect(() => {
         loadScreenshot();
         loadGames();
         loadVideos();
     }, []);
 
-    // =========================
     // LOAD SCREENSHOTS
-    // =========================
     async function loadScreenshot() {
         try {
             const response = await fetch("/data/screenshots.json");
@@ -48,9 +40,7 @@ function Home() {
         }
     }
 
-    // =========================
     // SLIDESHOW TRANSITION
-    // =========================
     useEffect(() => {
         if (images.length <= 1) return;
 
@@ -72,9 +62,7 @@ function Home() {
         return () => clearInterval(interval);
     }, [images, currentIndex, showingFirst]);
 
-    // =========================
     // LOAD GAMES
-    // =========================
     async function loadGames() {
         try {
             const response = await fetch("/data/games.json");
@@ -86,9 +74,7 @@ function Home() {
         }
     }
 
-    // =========================
     // LOAD VIDEOS
-    // =========================
     async function loadVideos() {
         try {
             const response = await fetch("/data/videos.json");
@@ -140,18 +126,16 @@ function Home() {
                 <section id="slideshow">
                     <img
                         id="slide1"
-                        className={`slide-img ${
-                            showingFirst ? "active" : ""
-                        }`}
+                        className={`slide-img ${showingFirst ? "active" : ""
+                            }`}
                         src={slide1}
                         alt="Slideshow image 1"
                     />
 
                     <img
                         id="slide2"
-                        className={`slide-img ${
-                            !showingFirst ? "active" : ""
-                        }`}
+                        className={`slide-img ${!showingFirst ? "active" : ""
+                            }`}
                         src={slide2}
                         alt="Slideshow image 2"
                     />
