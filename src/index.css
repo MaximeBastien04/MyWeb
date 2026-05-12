@@ -60,6 +60,19 @@ nav ul li a.active {
     text-decoration: underline 2px #FFFFFF;
     text-underline-offset: 8px;
 }
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #ffffff;
+    border-radius: 3px;
+}
 
 /* Hamburger Button */
 .hamburger {
