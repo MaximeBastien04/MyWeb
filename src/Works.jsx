@@ -1,6 +1,7 @@
 import { useEffect, useState, useRef } from "react";
 import { gsap } from "gsap";
 import { useNavigate } from "react-router-dom";
+import { assetPath } from "./utils/paths.js";
 
 function Works() {
     const [works, setWorks] = useState([]);
@@ -16,7 +17,7 @@ function Works() {
 
     async function loadGames() {
         try {
-            const response = await fetch("/data/games.json");
+            const response = await fetch(assetPath("data/games.json"));
             const gamesData = await response.json();
             setWorks(gamesData);
             setCurrentCategory("games");
@@ -27,7 +28,7 @@ function Works() {
 
     async function loadVideos() {
         try {
-            const response = await fetch("/data/videos.json");
+            const response = await fetch(assetPath("data/videos.json"));
             const videosData = await response.json();
             setWorks(videosData);
             setCurrentCategory("videos");
@@ -76,7 +77,6 @@ function Works() {
                     >
                         Games
                     </h2>
-
                     <h2
                         ref={videosRef}
                         onClick={() => switchCategory(loadVideos, "videos", -1)}
@@ -100,8 +100,8 @@ function Works() {
                             <img
                                 src={
                                     currentCategory === "games"
-                                        ? `/images/works/games/${work.thumbnail}`
-                                        : `/images/works/videos/${work.thumbnail}`
+                                        ? assetPath(`images/works/games/${work.thumbnail}`)
+                                        : assetPath(`images/works/videos/${work.thumbnail}`)
                                 }
                                 alt={work.title}
                             />

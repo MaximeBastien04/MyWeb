@@ -6,7 +6,7 @@ function Footer() {
                     <div class="socials">
                         <h3>socials</h3>
                         <p><a href="https://www.linkedin.com/in/maxime-bastien-729298236/" target="_blank">LinkedIn</a></p>
-                        <p><a href="https://www.instagram.com/maxime_.b/?hl=en" target="_blank">Instagram</a></p>
+                        <p><a href="https://github.com/MaximeBastien04" target="_blank">GitHub</a></p>
                     </div>
                     <div class="question">
                         <h3>Get in touch!</h3>

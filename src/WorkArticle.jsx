@@ -1,6 +1,7 @@
 import { useEffect, useState, useRef } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { gsap } from "gsap";
+import { assetPath } from "./utils/paths.js";
 
 function WorkArticle() {
     const { id } = useParams();
@@ -16,13 +17,13 @@ function WorkArticle() {
 
     useEffect(() => {
         if (work) {
-            setSelectedImage(`/images/works/games/${work.thumbnail}`);
+            setSelectedImage(assetPath(`images/works/games/${work.thumbnail}`));
         }
     }, [work]);
 
     async function loadWork() {
         try {
-            const gamesRes = await fetch("/data/games.json");
+            const gamesRes = await fetch(assetPath("data/games.json"));
             const games = await gamesRes.json();
             const game = games.find((g) => g.id === id);
 
@@ -32,7 +33,7 @@ function WorkArticle() {
                 return;
             }
 
-            const videosRes = await fetch("/data/videos.json");
+            const videosRes = await fetch(assetPath("data/videos.json"));
             const videos = await videosRes.json();
             const video = videos.find((v) => v.id === id);
 
@@ -69,32 +70,26 @@ function WorkArticle() {
 
     if (!work) return null;
 
-    const thumbnailPath = `/images/works/games/${work.thumbnail}`;
-    const screenshotPath = (filename) => `/images/works/games/${work.title}/${filename}`;
+    const thumbnailPath = assetPath(`images/works/games/${work.thumbnail}`);
+    const screenshotPath = (filename) => assetPath(`images/works/games/${work.title}/${filename}`);
 
     return (
         <section id="work-article-container">
-
             <button className="go-back-btn" onClick={goBack}>
-                &#8249; GO BACK
+                <span>&#8249;</span> GO BACK
             </button>
 
             <div id="work-article-main">
-
-                {/* LEFT — info */}
                 <div id="work-article-info">
                     <h1>{work.title}</h1>
-
                     <div
                         className="work-article-description"
                         dangerouslySetInnerHTML={{ __html: work.description }}
                     />
-
                     <p className="work-article-tools">
                         <strong>Tools: </strong>
                         {Array.isArray(work.tools) ? work.tools.join(" · ") : work.tools}
                     </p>
-
                     {work.link && (
                         <a href={work.link} target="_blank" rel="noreferrer">
                             <button>Play Game</button>
@@ -102,7 +97,6 @@ function WorkArticle() {
                     )}
                 </div>
 
-                {/* RIGHT — main image */}
                 <div id="work-article-image">
                     {category === "videos" && work.youtube_embed ? (
                         <iframe
@@ -122,19 +116,16 @@ function WorkArticle() {
                 </div>
             </div>
 
-            {/* SCREENSHOT GALLERY */}
             {category === "games" && work.screenshot?.length > 0 && (
                 <>
                     <hr id="work-article-divider" />
                     <div id="work-article-screenshots">
-
                         <img
                             src={thumbnailPath}
                             alt={`${work.title} thumbnail`}
                             className={selectedImage === thumbnailPath ? "active" : ""}
                             onClick={() => switchImage(thumbnailPath)}
                         />
-
                         {work.screenshot.map((filename, index) => (
                             <img
                                 key={index}
@@ -147,7 +138,6 @@ function WorkArticle() {
                     </div>
                 </>
             )}
-
         </section>
     );
 }
