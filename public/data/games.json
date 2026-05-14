@@ -6,15 +6,23 @@
         "thumbnail": "eternal_gaze.png",
         "screenshot": [
             "eternal-gaze1.png",
-            "eternal-gaze2.png"
+            "eternal-gaze2.png",
+            "eternal-gaze3.png",
+            "eternal-gaze4.png",
+            "eternal-gaze5.png",
+            "eternal-gaze6.png"
         ],
-        "description": 
-            "<strong>Eternal Gaze</strong> was my entry for the GMTK Game Jam 2025 and also my very first game jam experience. I worked on this project with <a href='https://jensdebra.artstation.com/' target='_blank'>Jens De Brabanter</a>, a close friend and 3D artist I collaborate with on most of my game-related projects. <br><br> <span>Key Research</span><br> The theme of the jam was <em>'loop'</em>, and we had just four days to complete the game. After some brainstorming, we came up with the idea of creating a game where your past deaths become tools for progress. This concept led us to incorporate Medusa, who petrifies Perseus whenever he is in her line of sight. The player can then use the statues left behind by their former selves as cover to advance through the level. <br><br> <span>Results</span><br> In the end, we successfully created a project we're proud of despite the tight deadline. It was a rewarding experience, and it certainly won't be the last game jam I participate in." 
-        ,
+        "video": "eternal-gaze-gameplay.mp4",
+        "description": "<strong>Eternal Gaze</strong> was my entry for the GMTK Game Jam 2025 and also my very first game jam experience. I worked on this project with <a href='https://jensdebra.artstation.com/' target='_blank'>Jens De Brabanter</a>, a close friend and 3D artist I collaborate with on most of my game-related projects.  The theme of the jam was <em>'loop'</em>, and we had just four days to complete the game. After some brainstorming, we came up with the idea of creating a game where your past deaths become tools for progress. This concept led us to incorporate Medusa, who petrifies Perseus whenever he is in her line of sight. <br><br> <span>Key Research</span><br> The challenge of this project lied within the time we had to create the game. In 4 days, we had to come up with a concept, design and a game. Another challenge of this project was the level design. Since you die & retry a lot, the level design has to be engaging enough for the player to keep playing. <br> I also implemented the respawn mechanic and hide mechanic, which are part of the core gameplay loop. When the player dies, they can then use the statues left behind by their former selves as cover to advance through the level. <br><br> <span>Results</span><br> In the end, we successfully created a project we're proud of despite the tight deadline. It was a rewarding experience, and it certainly won't be the last game jam I participate in.",
+        "implemented": [
+            " Respawn System",
+            " Hiding Mechanic",
+            " Particle System",
+            " Animation Events",
+            " Post-Processing"
+        ],
         "tools": [
-            " Unity",
-            " Post-Processing",
-            " C#"
+            " Unity"
         ],
         "link": "https://maximebastien.itch.io/eternal-gaze"
     },
@@ -25,16 +33,24 @@
         "thumbnail": "radio_silence.png",
         "screenshot": [
             "radio-silence1.png",
-            "radio-silence2.png"
+            "radio-silence3.png",
+            "radio-silence4.png",
+            "radio-silence5.png",
+            "radio-silence6.png"
         ],
-        "description": 
-            "In this project, I focused on developing gameplay mechanics and interactive elements for a horror puzzle game where players explore a dark, mysterious house, solve puzzles, and avoid a lurking monster. My role involved coding, while a friend from Howest created all the 3D assets.<br><br> <span>Key Research</span><br> Particle System: Implemented a dust particle system to stregthen the immersion.<br> Post-Processing: Applied post-processing profiles to heighten the eerie atmosphere.<br><br> <span>Results</span><br> The combination of post-processing, particle effects, and sound design significantly enhances the game's immersion. This project was a valuable learning experience to enhance my understanding of player immersion."
-        ,
-        "tools": [
-            " Unity",
+        "video": "radio-silence-gameplay.mp4",
+        "description": "Radio Silence is a puzzle horror game where you play as a journalist in search of paranormal activity. Your goal is to photograph evidence and discover the cause of this paranormal activity. <br> This project was my first big project. I worked on this project with Jens De Brabanter, a close friend and 3D artist I collaborate with on most of my game-related projects. We chose a retro PSX style to reproduce the uncomfortable feeling that some of the earlier games in this genre gave off.<br><br> <span>Key Research</span><br> One of the more complicated things was to add an AI to the monster. The monster is able to roam around the house and open doors. This, together with the eerie music, creates a tense atmosphere for the player. The post processing also has a big impact on the atmosphere by adding a CRT TV filter. The particle system also adds to the old vibe of the environment. <br> I created a spawn system for the different items in the game so they will each spawn at random locations of the game. This adds difficulty but also replayability.<br><br> <span>Results</span><br> The combination of everything makes for an immersive experience. This project was a valuable learning experience to enhance my understanding of player immersion along with all the new features I learned such as NavMeshSurface for enemy AI, Animation events and Audio systems.",
+        "implemented": [
             " Particle System",
             " Animation Events",
-            " Post-Processing"
+            " Post-Processing",
+            " Enemy AI",
+            " NavMesh",
+            " Audio Design & Implementation",
+            " Audio System & Settings"
+        ],
+        "tools": [
+            " Unity"
         ],
         "link": "https://maximebastien.itch.io/journalist-horror-game"
     },
@@ -45,16 +61,51 @@
         "thumbnail": "hope.jpg",
         "screenshot": [
             "hope1.png",
-            "hope2.png"
+            "hope2.png",
+            "hope3.png",
+            "hope4.png",
+            "hope5.png",
+            "hope6.png"
         ],
-        "description":
-            "This project was created as the final work for my Bachelor's degree in Multimedia at Erasmushogeschool Brussel, Campus Kaai. <strong>HOPE</strong> was developed as a way to raise awareness about mental health issues and loneliness.<br><br> <span>Key Research</span><br> My research for this project focused primarily on mental health challenges and loneliness among people in my generation. I explored how individuals cope with these issues, aiming to reflect these coping mechanisms within the game. I also studied how colors can be used to convey emotions. This knowledge helped me design environments that visually represent the protagonist's emotional journey.<br><br> <span>Results</span><br> In the end, I applied my research to make an emotionally impactful experience that raises awareness about the importance of mental health."
-        ,
+        "video": "hope-gameplay.mp4",
+        "description": "This project was created as the final work for my Bachelor's degree in Multimedia at Erasmushogeschool Brussel, Campus Kaai. <strong>HOPE</strong> was developed as a way to raise awareness about mental health issues and loneliness.<br><br> <span>Key Research</span><br> My research for this project focused primarily on mental health challenges and loneliness among people in my generation. I explored how individuals cope with these issues, aiming to reflect these coping mechanisms within the game. I also studied how colors can be used to convey emotions. This knowledge helped me design environments that visually represent the protagonist's emotional journey.<br><br> <span>Results</span><br> In the end, I applied my research to make an emotionally impactful experience that raises awareness about the importance of mental health.",
+        "implemented": [
+            " Animation Events",
+            " Post-Processing",
+            " Dialogue System",
+            " Parallax Background"
+        ],
         "tools": [
             " 2D Unity",
             " Adobe Illustrator"
         ],
         "link": "https://maximebastien.itch.io/hope"
+    },
+    {
+        "id": "box-puzzle-game",
+        "title": "Box Puzzle Game",
+        "date": "20/05/2024",
+        "thumbnail": "box_puzzle_game.jpg",
+        "screenshot": [
+            "box-puzzle-game1.png",
+            "box-puzzle-game2.png",
+            "box-puzzle-game3.png",
+            "box-puzzle-game4.png",
+            "box-puzzle-game5.png",
+            "box-puzzle-game6.png"
+        ],
+        "description": "This project is a vertical slice puzzle-based game I developed in Unity as my final project for my 3D Games course in school. This game is a demonstration of all the skills I acquired during the semester leading up to it.<br><br><span>Key Features</span><br> It features dynamic object interactions, allowing players to pick up, rotate, and manipulate objects to solve puzzles. Other gameplay elements include unlocking compartments, using animations and physics-based mechanics. <br><br> <span>Results</span><br> This was my first experience developing a game in Unity, and it proved to be an incredibly enriching journey. It allowed me to explore the many facets of game development within Unity from scripting interactions to working with physics, animation, and audio.",
+        "implemented": [
+            " Particle System",
+            " Animation Events",
+            " Post-Processing",
+            " Audio Design & Implementation"
+        ],
+        "tools": [
+            " 2D Unity",
+            " Maya"
+        ],
+        "link": "https://maximebastien.itch.io/box-puzzle-game"
     },
     {
         "id": "magic-color-mix",
@@ -63,11 +114,17 @@
         "thumbnail": "magic_color_mix.png",
         "screenshot": [
             "magic-color-mix1.png",
-            "magic-color-mix2.png"
+            "magic-color-mix2.png",
+            "magic-color-mix3.png",
+            "magic-color-mix4.png",
+            "magic-color-mix5.png",
+            "magic-color-mix6.png"
         ],
-        "description": 
-            "<strong>Magic Color Mix</strong> is a 2D educational game developed in Unity during my internship at Caramel Publishing, designed to teach children the basics of color theory through interactive play. The game introduces players to primary colors red, blue, and yellow and encourages them to experiment with color combinations.<br><br><span>Key Research</span><br> For this project, I explored how children learn through play and visual interaction. I focused on simplifying the concepts of primary, secondary, and tertiary colors in a way that felt both intuitive and engaging. I also looked into user interface best practices for young audiences to ensure the game was accessible and easy to navigate. <br><br> <span>Results</span><br> The final result is an interactive and playful learning experience that helps children understand color mixing through experimentation. The project combines education and entertainment in a way that's both fun and informative."
-        ,
+        "video": "magic-color-mix-gameplay.mp4",
+        "description": "<strong>Magic Color Mix</strong> is a 2D educational game developed in Unity during my internship at Caramel Publishing, designed to teach children the basics of color theory through interactive play. The game introduces players to primary colors red, blue, and yellow and encourages them to experiment with color combinations.<br><br><span>Key Research</span><br> For this project, I explored how children learn through play and visual interaction. I focused on simplifying the concepts of primary, secondary, and tertiary colors in a way that felt both intuitive and engaging. I also looked into user interface best practices for young audiences to ensure the game was accessible and easy to navigate. <br><br> <span>Results</span><br> The final result is an interactive and playful learning experience that helps children understand color mixing through experimentation. The project combines education and entertainment in a way that's both fun and informative.",
+        "implemented": [
+            " Audio Design & Implementation"
+        ],
         "tools": [
             " 2D Unity",
             " Adobe Illustrator"
@@ -79,31 +136,13 @@
         "title": "Counting Animals with Snow White",
         "date": "29/01/2025",
         "thumbnail": "counting_animals_with_snow_white.png",
-        "description": 
-            "<strong>Counting Animals with Snow White</strong> is a game I developed during my internship at Caramel Publishing. Based on the children's book 'Blanche-Neige au pays des chiffres', the game transforms the story into an interactive seek-and-find experience for young learners.<br><br><span>Key Research</span><br> This project focused on translating educational content from a physical book into an engaging digital format. I designed simple, intuitive mechanics where players must search for and click on one or more animals hidden within a scene. The goal was to support early counting skills while keeping the experience playful and engaging.<br><br> <span>Results</span><br> The final game delivers a fun and educational experience that stays true to the spirit of the original book. It encourages observation and number recognition in a gentle, storybook-like environment."
-        ,
-        "tools": [
+        "description": "<strong>Counting Animals with Snow White</strong> is a game I developed during my internship at Caramel Publishing. Based on the children's book 'Blanche-Neige au pays des chiffres', the game transforms the story into an interactive seek-and-find experience for young learners.<br><br><span>Key Research</span><br> This project focused on translating educational content from a physical book into an engaging digital format. I designed simple, intuitive mechanics where players must search for and click on one or more animals hidden within a scene. The goal was to support early counting skills while keeping the experience playful and engaging.<br><br> <span>Results</span><br> The final game delivers a fun and educational experience that stays true to the spirit of the original book. It encourages observation and number recognition in a gentle, storybook-like environment.",
+        "implemented": [
+            " Audio Design & Implementation"
+        ],"tools": [
             " 2D Unity",
             " Adobe Illustrator"
         ],
         "link": "https://maximebastien.itch.io/counting-animals-with-snow-white"
-    },
-    {
-        "id": "box-puzzle-game",
-        "title": "Box Puzzle Game",
-        "date": "20/05/2024",
-        "thumbnail": "box_puzzle_game.jpg",
-        "screenshot": [
-            "box-puzzle-game1.png",
-            "box-puzzle-game2.png"
-        ],
-        "description": 
-            "This project is a puzzle-based game developed in Unity, designed as my final work for the 3D Games course.<br><br><span>Key Features</span><br> It features dynamic object interactions, allowing players to pick up, rotate, and manipulate objects to solve puzzles. Other gameplay elements include unlocking compartments, using animations and physics-based mechanics. <br><br> <span>Results</span><br> This was my first experience developing a game in Unity, and it proved to be an incredibly enriching journey. It allowed me to explore the many facets of game development within Unity from scripting interactions to working with physics, animation, and audio."
-        ,
-        "tools": [
-            " 2D Unity",
-            " Maya"
-        ],
-        "link": "https://maximebastien.itch.io/box-puzzle-game"
     }
 ]

@@ -61,7 +61,7 @@ button:hover {
     font-weight: 700;
 }
 
-.typewrite > .wrap {
+.typewrite>.wrap {
     border-right: 0.08em solid #FFBB63;
 }
 
@@ -85,12 +85,12 @@ nav ul {
     justify-content: right;
 }
 
-nav ul li{
+nav ul li {
     transition: 0.2s;
 }
 
 
-nav ul li:hover{
+nav ul li:hover {
     transform: translateY(-2px);
 }
 
@@ -401,6 +401,7 @@ article h2 {
     color: #aaaaaa;
 }
 
+.work-article-implemented,
 .work-article-tools {
     margin-top: 24px;
     font-family: Avenir;
@@ -408,7 +409,7 @@ article h2 {
     color: #cccccc;
 }
 
-#work-article-info > a {
+#work-article-info>a {
     display: inline-block;
     margin-top: 30px;
 }
@@ -434,26 +435,42 @@ article h2 {
     padding-bottom: 8px;
 }
 
-#work-article-screenshots img {
+#work-article-screenshots img,
+#work-article-screenshots div video {
     height: 130px;
     width: 200px;
     object-fit: cover;
     flex-shrink: 0;
     cursor: pointer;
     opacity: 0.5;
-    border: 2px solid transparent;
+    border: solid #ffffff50 1px;
     transition: 0.2s;
 }
 
-#work-article-screenshots img:hover {
+#work-article-screenshots img:hover,
+#work-article-screenshots div:hover,
+#work-article-screenshots div video:hover {
     opacity: 0.8;
 }
 
-#work-article-screenshots img.active {
+#work-article-screenshots img.active,
+#work-article-screenshots div.active,
+#work-article-screenshots div video.active {
     opacity: 1;
     border-color: #ffffff;
 }
 
+#work-article-screenshots div {
+    display: grid;
+    text-align: center;
+    align-items: center;
+    font-size: 250%;
+}
+
+#work-article-screenshots div video, #work-article-screenshots div span {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
 
 #works-container #work-categories {
     display: grid;
@@ -513,6 +530,11 @@ article h2 {
 #work-article-image {
     border: #ffffff 1px solid;
 }
+
+#work-article-image video {
+    width: 100%;
+}
+
 #work-article-screenshots img {
     border: #4f4f4f 1px solid;
 }
@@ -579,7 +601,7 @@ article h2 {
     gap: 30px;
 }
 
-#skills div article{
+#skills div article {
     background-color: #2A2A2A;
     border-radius: 5px;
     text-align: center;
@@ -594,7 +616,7 @@ article h2 {
     transform: translateY(-5px);
 }
 
-#skills div article img{
+#skills div article img {
     width: 5vw;
     height: 5vw;
     object-fit: contain;
