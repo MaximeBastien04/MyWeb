@@ -90,10 +90,12 @@ function WorkArticle() {
                         className="work-article-description"
                         dangerouslySetInnerHTML={{ __html: work.description }}
                     />
-                    <p className="work-article-implemented">
-                        <strong>What I implemented: </strong>
-                        {Array.isArray(work.implemented) ? work.implemented.join(" · ") : work.implemented}
-                    </p>
+                    {category === "games" && work.implemented && (
+                        <p className="work-article-implemented">
+                            <strong>What I implemented: </strong>
+                            {Array.isArray(work.implemented) ? work.implemented.join(" · ") : work.implemented}
+                        </p>
+                    )}
                     <p className="work-article-tools">
                         <strong>Tools: </strong>
                         {Array.isArray(work.tools) ? work.tools.join(" · ") : work.tools}
