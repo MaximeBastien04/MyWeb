@@ -274,7 +274,9 @@ header article a button {
 #home-works .moreWorks {
     display: block;
     text-align: center;
-    margin: 50px 0;
+    width: 20vw;
+    margin: auto;
+    margin-top: 50px;
 }
 
 article h2 {
