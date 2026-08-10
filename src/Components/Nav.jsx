@@ -59,7 +59,6 @@ function Nav() {
                     <li><Link to="/">Home</Link></li>
                     <li><Link to="/works">Works</Link></li>
                     <li><Link to="/about">About</Link></li>
-                    <li><Link to="/contact">Contact</Link></li>
                 </ul>
 
                 {/* HAMBURGER BUTTON */}
@@ -73,10 +72,10 @@ function Nav() {
             {/* MOBILE MENU */}
             <div className="mobile-menu" ref={menuRef}>
                 <ul>
-                    {["/", "/works", "/about", "/contact"].map((path, index) => (
+                    {["/", "/works", "/about"].map((path, index) => (
                         <li key={path} ref={(el) => (linksRef.current[index] = el)}>
                             <Link to={path} onClick={closeMenu}>
-                                {["Home", "Works", "About", "Contact"][index]}
+                                {["Home", "Works", "About"][index]}
                             </Link>
                         </li>
                     ))}

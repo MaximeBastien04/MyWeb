@@ -159,6 +159,17 @@ footer aside p {
     margin: auto;
 }
 
+footer a{
+    text-decoration: none;
+}
+
+footer button {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+
 /* Home */
 header#home-header {
     display: grid;
@@ -475,7 +486,8 @@ article h2 {
 
 #works-container #work-categories {
     display: grid;
-    grid-template-columns: auto auto auto 1fr;
+    grid-template-columns: auto 1fr;
+    justify-items: baseline;
     grid-gap: 50px;
     margin-top: 50px;
     margin-bottom: 30px;
@@ -897,6 +909,10 @@ textarea:-webkit-autofill {
     #about-container,
     #contact {
         margin-bottom: 60px;
+    }
+
+    #works-container #work-categories{
+        justify-self: center;
     }
 
     /* Work Article */
