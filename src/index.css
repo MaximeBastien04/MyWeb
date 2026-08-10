@@ -881,18 +881,18 @@ textarea:-webkit-autofill {
     }
 
     /* Home */
+    header#home-header
+    {
+        margin-bottom: 50px;
+    }
+
     header#home-header div {
         display: block;
         text-align: center;
     }
 
-    header h1 {
-        font-size: 60px;
-        text-align: center;
-    }
-
-    header h1 span {
-        font-size: 64px;
+    header#home-header div img {
+        width: 200px;
     }
 
     header article p {
@@ -900,6 +900,10 @@ textarea:-webkit-autofill {
     }
 
     #home-works {
+        margin-top: 0;
+    }
+
+    .slide-img {
         margin-top: 0;
     }
 
