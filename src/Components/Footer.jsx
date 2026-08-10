@@ -5,8 +5,10 @@ function Footer() {
                 <section class="footer-content">
                     <div class="socials">
                         <h3>socials</h3>
-                        <p><a href="https://www.linkedin.com/in/maxime-bastien-729298236/" target="_blank">LinkedIn</a></p>
-                        <p><a href="https://github.com/MaximeBastien04" target="_blank">GitHub</a></p>
+                        <div class="social-links">
+                            <a href="https://www.linkedin.com/in/maxime-bastien-729298236/" target="_blank"><img src="images/icons/linkedin_icon.png" alt="LinkedIn" />LinkedIn</a>
+                            <a href="https://github.com/MaximeBastien04" target="_blank"><img src="images/icons/github_icon.png" alt="GitHub" />GitHub</a>
+                        </div>
                     </div>
                     <div class="question">
                         <h3>Get in touch!</h3>

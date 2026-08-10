@@ -129,20 +129,34 @@ nav ul li a {
 
 .footer-content div h3 {
     text-transform: uppercase;
-    margin-bottom: 10px;
+    margin-bottom: 2cqh;
 }
 
-.footer-content div p {
+.footer-content div .social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer-content div .social-links a {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.footer-content div .social-links img {
+    width: 25px;
+    height: 25px;
+}
+
+.footer-content div a {
     font-family: Avenir;
-    margin-top: 10px;
-}
-
-.footer-content div p a {
     color: #FFFFFF;
+    transition: 0.2s;
 }
 
-.footer-content div p a:hover {
-    font-weight: bolder;
+.footer-content div a:hover {
+    transform: translateY(-2px);
 }
 
 footer aside {
