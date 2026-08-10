@@ -135,14 +135,8 @@ function Home() {
         <>
             <header id="home-header">
                 <div>
-                    <h1>
-                        <span>Game</span>
-                        <br />
-                        Developer
-                    </h1>
-
-                    <h2>Game Developer</h2>
-
+                    <img src={assetPath("images/photos/pfp.png")} alt="Maxime Bastien"/>
+                    
                     <article>
                         <p>Hi! I'm Maxime Bastien. I'm a
                             <span className="typewrite" data-period="2000" data-type='[" Game Developer", " Creative Designer", " Web Developer"]'>

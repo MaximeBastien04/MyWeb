@@ -222,11 +222,17 @@ header#home-header div {
     display: grid;
     width: 90%;
     margin: auto;
-    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    grid-template-columns: 2fr 3fr;
     grid-row: 1/2;
     grid-column: 1/2;
     grid-gap: 50px;
     z-index: 2;
+}
+
+header#home-header div img {
+    width: 450px;
+    margin: auto;
 }
 
 header h1 {
@@ -237,7 +243,7 @@ header h1 {
 }
 
 header h1 span {
-    font-size: 202px;
+    font-size: 108px;
     margin-left: -5px;
 }
 
@@ -871,7 +877,7 @@ textarea:-webkit-autofill {
     }
 
     header h1 span {
-        font-size: 120px;
+        font-size: 64px;
     }
 
     header article p {
