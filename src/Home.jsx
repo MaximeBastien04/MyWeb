@@ -136,7 +136,7 @@ function Home() {
             <header id="home-header">
                 <div>
                     <img src={assetPath("images/photos/pfp.png")} alt="Maxime Bastien"/>
-                    
+
                     <article>
                         <p>Hi! I'm Maxime Bastien. I'm a
                             <span className="typewrite" data-period="2000" data-type='[" Game Developer", " Creative Designer", " Web Developer"]'>
@@ -198,7 +198,7 @@ function Home() {
                     </div>
 
                     <Link to="/works" className="moreWorks">
-                        <button>More works</button>
+                        More works
                     </Link>
                 </article>
             </main>
