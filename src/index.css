@@ -906,29 +906,10 @@ textarea:-webkit-autofill {
     .slide-img {
         margin-top: 0;
     }
-
-    /* .slide-track {
-        animation: scroll 40s linear infinite;
+    
+    #home-works .moreWorks {
+        width: 50vw;
     }
-
-    .slide-track-right {
-        animation: scroll-right 40s linear infinite;
-        justify-self: right;
-    }
-
-    .slide-track,
-    .slide-track-right {
-        width: calc(200px * 12);
-    }
-
-    .slide{
-        height: 100%;
-    }
-
-    .slide img{
-        height: 130px;
-    } */
-
 
     /* Footer */
     .footer-content {
