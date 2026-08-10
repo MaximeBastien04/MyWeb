@@ -607,6 +607,10 @@ article h2 {
   font-size: 18px;
 }
 
+#about-container section p br:first-child {
+    display: none;
+}
+
 #about-container aside {
   display: grid;
   grid-template-columns: 7fr 2fr;
@@ -883,7 +887,7 @@ textarea:-webkit-autofill {
     margin-bottom: 50px;
   }
 
-  header#home-header br {
+  header#home-header br, #about-container section p br:first-child {
     display: block;
   }
 
