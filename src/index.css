@@ -882,6 +882,11 @@ textarea:-webkit-autofill {
     justify-self: center;
   }
 
+  button:hover {
+    background-color: transparent;
+    border: none;
+}
+
   /* Home */
   header#home-header {
     margin-bottom: 50px;
