@@ -882,7 +882,7 @@ textarea:-webkit-autofill {
     justify-self: center;
   }
 
-  button:hover {
+  nav button:hover {
     background-color: transparent;
     border: none;
 }
