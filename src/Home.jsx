@@ -138,7 +138,7 @@ function Home() {
                     <img src={assetPath("images/photos/pfp.png")} alt="Maxime Bastien"/>
 
                     <article>
-                        <p>Hi! I'm Maxime Bastien. I'm a
+                        <p>Hi! I'm Maxime Bastien. <br/> I'm a
                             <span className="typewrite" data-period="2000" data-type='[" Game Developer", " Creative Designer", " Web Developer"]'>
                                 <span className="wrap"></span>
                             </span>.
