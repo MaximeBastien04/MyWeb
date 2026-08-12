@@ -1,5 +1,39 @@
 [
     {
+        "id": "ad-away",
+        "title": "Ad Away",
+        "date": "26/07/2026",
+        "thumbnail": "ad_away.png",
+        "screenshot": [
+            "ad-away1.png",
+            "ad-away2.png",
+            "ad-away3.png",
+            "ad-away4.png",
+            "ad-away5.png",
+            "ad-away6.png"
+        ],
+        "video": "ad-away-gameplay.mp4",
+        "description": "<strong>Ad Away</strong> is a fast-paced desktop management game developed in Unity for the GMTK Game Jam 2026. Players take on the role of an employee whose job is to close an endless stream of intrusive pop-up advertisements during 30-second workdays. Throughout July, the goal is to earn €1,000 to take your family on a vacation to the Bahamas.<br><br><span>Key Features</span><br>Different advertisement types introduce unique interactions, including misleading buy buttons, multi-click ads, and CAPTCHA challenges. At the end of each day, players can spend their earnings on upgrades and consumable items such as antivirus tools, clovers, magnifiers, and coffee to improve future shifts.<br><br><span>Results</span><br>The final game combines randomized advertisement spawning, increasing difficulty, a shop and inventory system, multiple endings, sound and music, and a retro desktop-inspired interface. It is fully playable in the browser through a WebGL build.",
+        "implemented": [
+            " Advertisement Spawn System",
+            " Advertisement Mechanics",
+            " Shop System",
+            " Inventory System",
+            " Countdown Timer",
+            " Difficulty Progression",
+            " Ending System"
+        ],
+        "tools": [
+            " Unity 6 / C#",
+            " Visual Studio Code",
+            " Blender",
+            " Photoshop",
+            " Illustrator",
+            " Audacity"
+        ],
+        "link": "https://maximebastien.itch.io/ad-away"
+    },
+    {
         "id": "eternal-gaze",
         "title": "Eternal Gaze",
         "date": "03/08/2025",
