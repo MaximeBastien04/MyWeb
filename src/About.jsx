@@ -120,7 +120,8 @@ function About() {
                         <article><img src={assetPath("images/icons/premiere_pro.png")}/><h3>Premiere Pro</h3></article>
                         <article><img src={assetPath("images/icons/after_effects.png")}/><h3>After Effects</h3></article>
                         <article><img src={assetPath("images/icons/xd.png")}/><h3>XD</h3></article>
-                        <article><img src={assetPath("images/icons/sn_csa.png")}/><h3>SN CSA</h3></article>
+                        <article><img src={assetPath("images/icons/nextjs.png")}/><h3>Next.js</h3></article>
+                        <article><img src={assetPath("images/icons/angular.png")}/><h3>Angular</h3></article>
                     </div>
                 </section>
             </section>
