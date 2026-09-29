@@ -107,21 +107,21 @@ function About() {
                     <h2>Skills</h2>
                     <hr />
                     <div>
-                        <article><img src={assetPath("images/icons/unity.png")}/><h3>Unity</h3></article>
-                        <article><img src={assetPath("images/icons/html.png")}/><h3>HTML</h3></article>
-                        <article><img src={assetPath("images/icons/css.png")}/><h3>CSS</h3></article>
+                        <article><img src={assetPath("images/icons/html.png")}/><h3>HTML5</h3></article>
+                        <article><img src={assetPath("images/icons/css.png")}/><h3>CSS3</h3></article>
                         <article><img src={assetPath("images/icons/javascript.png")}/><h3>JavaScript</h3></article>
                         <article><img src={assetPath("images/icons/react.png")}/><h3>React</h3></article>
+                        <article><img src={assetPath("images/icons/nextjs.png")}/><h3>Next.js</h3></article>
+                        <article><img src={assetPath("images/icons/angular.png")}/><h3>Angular</h3></article>
                         <article><img src={assetPath("images/icons/mongodb.png")}/><h3>MongoDB</h3></article>
+                        <article><img src={assetPath("images/icons/unity.png")}/><h3>Unity</h3></article>
                         <article><img src={assetPath("images/icons/figma.png")}/><h3>Figma</h3></article>
+                        <article><img src={assetPath("images/icons/xd.png")}/><h3>XD</h3></article>
                         <article><img src={assetPath("images/icons/photoshop.png")}/><h3>Photoshop</h3></article>
                         <article><img src={assetPath("images/icons/illustrator.png")}/><h3>Illustrator</h3></article>
                         <article><img src={assetPath("images/icons/indesign.png")}/><h3>Indesign</h3></article>
                         <article><img src={assetPath("images/icons/premiere_pro.png")}/><h3>Premiere Pro</h3></article>
                         <article><img src={assetPath("images/icons/after_effects.png")}/><h3>After Effects</h3></article>
-                        <article><img src={assetPath("images/icons/xd.png")}/><h3>XD</h3></article>
-                        <article><img src={assetPath("images/icons/nextjs.png")}/><h3>Next.js</h3></article>
-                        <article><img src={assetPath("images/icons/angular.png")}/><h3>Angular</h3></article>
                     </div>
                 </section>
             </section>
